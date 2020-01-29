@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Codejam-image-api</title>
+    <link rel="stylesheet" href="./image-api/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="taskNamePanel">
+            <img src="./assets/images/nav icon.png" alt="icon">
+            <p class="taskNamePanel--text">CodeJam - Image API</p>
+            <img src="./assets/images/menu icon.png" alt="icon">
+        </header>
+        <main class="canvasLayout">
+            <section class="leftPanel">
+                <ul class="instruments">
+                    <li class="instruments--items bucket">
+                        <img src="./assets/images/icon-share.png" alt="icon">
+                        <p class="instruments--text">Paint bucket</p>
+                    </li>
+                    <li class="instruments--items underlined choosing">
+                        <img src="./assets/images/icon-upload.png" alt="icon">
+                        <label for="colorWell" class="instruments--text">Choose color</label>
+                    </li>
+                    <li class="instruments--items pencil highlightItem">
+                        <img src="./assets/images/pencil.png" alt="icon">
+                        <p class="instruments--text">Pencil</p>
+                    </li>
+                    <li class="instruments--items transform">
+                        <img src="./assets/images/icon-share2.png" alt="icon">
+                        <p class="instruments--text">Transform</p>
+                    </li>
+                </ul>
+                <ul class="colors">
+                    <li class="instruments--items">
+                        <div class="colors--iconColor current"></div>
+                        <p class="instruments--text">Current color</p>
+                    </li>
+                    <li class="instruments--items choosePreviousColor underlined">
+                        <div class="colors--iconColor previous"></div>
+                        <p class="instruments--text">Prev color</p>
+                    </li>
+                    <li class="instruments--items chooseRedColor">
+                        <div class="colors--iconColor red"></div>
+                        <p class="instruments--text">Red</p>
+                    </li>
+                    <li class="instruments--items chooseBlueColor">
+                        <div class="colors--iconColor blue"></div>
+                        <p class="instruments--text">Blue</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="canvas">
+                <section class="getImage">
+                    <button class="loadImageButton">Load</button>
+                    <form class="gettingImageForm">
+                        <div class="searchArea">
+                            <img src="./assets/images/find.png" alt="find">
+                            <input type="search" class="placeKeyWord" placeholder="Enter the word">
+                        </div>
+                    </form>
+                    <button class="blackAndWhiteImageButton">B&W</button>
+                </section>
+                <canvas id="canvas" width="128" height="128"></canvas>
+            </section>
+            <section class="rightPanel">
+                <ul class="size">
+                    <li class="instruments--items firstImage">
+                        <div class="size--checkBlock"></div>
+                        <p class="instruments--text">4x4</p>
+                    </li>
+                    <li class="instruments--items secondImage">
+                        <div class="size--checkBlock"></div>
+                        <p class="instruments--text">32x32</p>
+                    </li>
+                    <li class="instruments--items thirdImage">
+                        <div class="size--checkBlock"></div>
+                        <p class="instruments--text">256x256</p>
+                    </li>
+                </ul>
+                <input type="color" value="#ff0000" id="colorWell">
+            </section>
+        </main>
+    </div>
+    <script src="./image-api/js/script.js"></script>
+</body>
+
+</html>

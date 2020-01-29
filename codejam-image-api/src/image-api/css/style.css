@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('../../assets/fonts/ProximaNova-Light.ttf') format('woff2');
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    max-height: 900px;
+}
+
+.taskNamePanel {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.32);
+}
+
+.taskNamePanel--text {
+    width: 95%;
+    font-family: 'ProximaNova';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.canvasLayout {
+    display: flex;
+}
+
+.leftPanel {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.canvas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 512px;
+    height: 100%;
+    margin-top: 8%;
+    margin-left: 5%;
+}
+
+#canvas {
+    width: 512px;
+    height: 512px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.12);
+    image-rendering: pixelated;
+}
+
+.getImage {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.loadImageButton, .blackAndWhiteImageButton {
+    width: 65px;
+    height: 33px;
+    font-family: 'ProximaNova';
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background-color: #00BCD4;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.searchArea {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 208px;
+    background: #FAFAFA;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+}
+
+.gettingImageForm {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.placeKeyWord {
+    background: none;
+    border: none;
+}
+
+.rightPanel {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-left: 5%;
+}
+
+.instruments, .colors, .size {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 228px;
+    height: 100%;
+    max-height: 246px;
+    margin-top: 30.8%;
+    margin-left: 6%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
+}
+
+.instruments--items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    cursor: pointer;
+}
+
+.instruments--items:hover {
+    background-color: lightgray;
+}
+
+.transform {
+    opacity: 0.3;
+}
+
+.underlined {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.instruments--text {
+    width: 60%;
+    margin-left: 15%;
+    font-family: 'ProximaNova';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.541327);
+}
+
+.colors--iconColor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.541327);
+    border-radius: 50%;
+}
+
+.current {
+    background-color: black;
+}
+
+.previous {
+    background-color: lightgreen;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: lightskyblue;
+}
+
+.size--checkBlock {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.firstImage, .secondImage, .thirdImage {
+    cursor: pointer;
+}
+
+.highlightItem {
+    background-color: lightgray;
+    box-shadow: 0 0 10px black;
+}
+
+.palette {
+    display: flex;
+    flex-direction: column;
+}
+
+.colorRow {
+    display: flex;
+}
+
+.colorColumn {
+    width: 20px;
+    height: 20px;
+}
+
+#colorWell {
+    visibility: hidden;
+}
